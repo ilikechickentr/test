@@ -14,10 +14,10 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(raylib)
 
+
 add_executable(GameEngine main.cpp)
 
 target_include_directories(GameEngine PRIVATE
-        externalstuff/raygui
-)
+externalStuff/raygui)
 
 target_link_libraries(GameEngine PRIVATE raylib)
